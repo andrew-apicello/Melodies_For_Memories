@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Melodies for Memories</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style type="text/css">
+		
+
+	</style>
+</head>
+
+<body>
+<h1>Melodies for Memories</h1>
+
+
+
+<script type="text/javascript">
+	
+	var natureUrl = "http://api.nature.com/content/opensearch/request?query=alzheimers"
+
+$.ajax({
+	url: natureUrl,
+	method: "GET",
+	dataType: "json"
+}).done(function(response){
+
+	console.log(response);
+
+});
+
+
+
+</script>
+</body>
+</html>
