@@ -231,16 +231,20 @@
 					method: "GET"
 				}).done(function(response){
 					var title = response.result[id].title;
-					var date = 0;
-					var summary = 0;
-					var articleUrl = ""
+					var date = response.result[id].pubdate;
+					var journal = response.result[id].source;
+					var articleUrl = "https://www.ncbi.nlm.nih.gov/pubmed/" + id
 
 					passText();
+
 					function passText(){
 						addPubMedChild("<a href=\"" + articleUrl + "\">" + "<h3>" + title + "</h3>" +"</a>")
 					}
 
 					addPubMedChild(title)
+					addPubMedChild(date)
+					addPubMedChild(journal)
+
 					function addPubMedChild(text){
 						var newDiv = $("<div>")
 						newDiv.html(text);
@@ -275,8 +279,6 @@ $.ajax({
 		newDiv.html(text);
 		$("#nytimes-table").append(newDiv);
 	}
-
-	console.log("NYT Check");
 }).fail(function(err) {
 	throw err;
 });
