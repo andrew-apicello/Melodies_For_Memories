@@ -4,31 +4,329 @@
 	<title>Melodies for Memories</title>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
 	<style type="text/css">
 		
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			position: absolute;
+		}
 
+		.backgroundOne{
+			width: 100vw;
+			height: 100vh;
+			background: url(assets/images/piano-1835179.jpg); 
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			overflow: visible;
+		}
+
+		.backgroundTwo{
+			margin-top: 0px;
+			width: 100vw;
+			height: 100vh;
+			background: url(assets/images/violin-2560312.jpg); 
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+
+		.backgroundThree {
+			width: 100vw;
+			height: 100vh;
+			background: url(assets/images/harp-756949.jpg); 
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			clear: all;
+			align-content: center;
+		}
+
+
+		h1{
+			margin: auto;
+			padding: 20px;
+			background-color: rgba(0,0,0,0.5);
+			color: white;
+			position: relative;
+			top: 100px;
+			width: 60%;
+			text-align: center;
+			font-size: 700%;
+			border-radius: 20px;
+			font-family: 'Libre Baskerville', serif;
+			overflow: hidden;
+
+			background: black; 
+			background: -webkit-linear-gradient(left top, rgba(0,0,0,0.0), rgba(0,0,0,1)); 
+			background: -o-linear-gradient(bottom right, rgba(0,0,0,0.0), rgba(0,0,0,1)); 
+			background: -moz-linear-gradient(bottom right, rgba(0,0,0,0.0), rgba(0,0,0,1));
+			background: linear-gradient(to bottom right, rgba(0,0,0,0.0), rgba(0,0,0,1)); 
+			/*Should reduce the size of the h1 tag upon reaching 800px to */
+		}
+
+		.content{
+			background-color: white;
+			border-top: black solid 2px;
+			border-bottom: black solid 2px;
+			padding: 60px 15%;
+			margin-top: 200px;
+			float: left;
+		}
+
+		p{
+			font-size: 120%;
+			text-indent: 50px;
+		}
+
+		img{
+			height: 300px;
+			width: 400px;
+			border: solid black 2px;
+		}
+
+		.featureContainer{
+			margin-top: 300px;
+			background-color: white;
+			float: left;
+			padding: 60px 40px 60px 40px;
+			border-top: black solid 2px;
+			border-bottom: black solid 2px;
+		}
+
+		.featuredArtist{
+			float: left;
+			width: 40%;
+			background-color: white;
+			padding: 40px;
+		}
+		iframe{
+			float: left;
+			padding: 0px;
+			margin: 40px
+		}
+
+		.newImage{
+			float: left;
+		}
+
+		.newsHeader{
+			clear: both;
+			display: block;
+			padding: 40px;
+			font-size: 300%
+		}
+
+		#nytimes-table{
+			float: left;
+			width: 60%;
+			margin: 40px;
+		}
+		#pubmed-table{
+			float: left;
+			width: 60%;
+			margin: 40px;
+		}
+
+		#nytimes-table div{
+			padding: 2px;
+		}
+
+		#pubmed-table div{
+			padding: 2px;
+		}
+
+		footer{
+			position: absolute;
+			bottom: 0px;
+			width: 100%;
+			color: white;
+			font-size: 150%;
+			background-color: black;
+			padding: 20px;
+		}
 	</style>
+
 </head>
 
 <body>
-<h1>Melodies for Memories</h1>
+	<div class="backgroundOne">
+		<h1 id="title" >Melodies for Memories</h1>
+		<div class="content" align="justify">
+			<p>
+				We all share a lot of ourselves on the internet. Yet, there is a hesitation to show who we really are. Our ideas, our passions, and our talents shape our lives far more than looks and likes.
+			</p>
+			<br>
+			<p>
+				Together, we believe in the power of music. Patients with late stage Alzheimer’s disease can still recognize their favorite songs, even after losing the ability to identify loved ones. Music is powerful - especially for individuals with Alzheimer’s disease and related disorders. It sparks compelling outcomes even in the very late stages of the disease. Music moves us - by shifting our mood, managing stress-induced agitation, stimulating positive interactions, facilitating cognitive function, and coordinating motor movements.<sup><a href="https://www.karger.com/Article/Abstract/229024" style="text-decoration:none">[1]</a></sup>
+			</p>
+			<br>
+			<p>
+				Musicianship also keeps the brains of healthy people in shape and can prevent or delay neurodegenerative diseases.<sup><a href="http://www.sciencedirect.com/science/article/pii/S0306987708002880" style="text-decoration:none">[2]</a></sup> Therefore, we want to start "Melodies for Memories"! 
+
+				Visit our <a href="https://www.facebook.com/MelodiesForMemories/">Facebook page</a> and share a one minute clip of your musical passion or talent. You don’t need to know how to play an instrument! Musical expression is universal; it can take the form of singing, whistling, dancing or anything else you come up with!
+			</p>
+			<br>
+			<p>
+				Thorsten & Andrew
+			</p>
+		</div>
+	</div>
+
+	<div class="backgroundTwo">
+		<!-- add featured youtubeclips here! -->
+		<div class="featureContainer">
+			<div class="featuredArtist">
+				<h2 id="featuredArtist">This Month's Featured Artist:</h2>
+				<br><br>
+				<h3 id="artist">Kristy, performing "If I die Young" by The Band Perry</h3>
+				<br><br>
+				<p align="justify">"A friend of a friend from the States has set up a new initiative called Melodies for Memories which encourages nominees to post a 1 min clip of them signing/playing an instrument/dancing to music and/or donate £5 to an Alzheimer's Foundation and then nominate others to follow suit! Thanks for the nomination Anna, I nominate Janice, Morvyn and Scott."</p>
+			</div>
+			<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffingalicious%2Fvideos%2F10152802930348871%2F&show_text=0&width=560" width="560" height="315" style="border: black solid 2px;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+		</div>
+	</div>
+	<div class="backgroundThree">
+		<div class="featureContainer">
+			<div id="newYork">
+				<h2 class="newsHeader">Most Popular NYT Articles on Alzheimer's Disease</h2>
+				<img style="float: left" class="newsImage" src="assets/images/new-york-times-1789976.jpg">
+				<div>
+					<div id="nytimes-table" align="justify"></div>
+				</div>
+			</div>
+			<br><br>
+			<div id="pubMed">
+				<h2 class="newsHeader">Recent Primary Journal Articles on Alzheimer's Research</h2>
+				<img style="float: left" class="newsImage" src="assets/images/brain-951874.png">
+				<div id="pubmed-table" align="justify"></div>
+			</div>
+		</div>
+	</div>
+	<!-- <footer>Contact Us! (not working just yet)</footer> -->
+
+	<script type="text/javascript">
+		$.ajax({
+			url: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Alzheimer's&retmode=json&retmax=3",
+			method: "GET"
+		}).done(function(response){
+			var id1 = response.esearchresult.idlist[0];
+			var id2 = response.esearchresult.idlist[1];
+			var id3 = response.esearchresult.idlist[2];
+
+			getSummary(id1);
+			getSummary(id2);
+			getSummary(id3);
 
 
+			function getSummary(id){
+				var getSummaryUrl = "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&rettype=abstract&id=" + id + "I"	
 
-<script type="text/javascript">
-	
-	var natureUrl = "http://api.nature.com/content/opensearch/request?query=alzheimers"
+				$.ajax({
+					url: getSummaryUrl,
+					method: "GET"
+				}).done(function(response){
+					var title = response.result[id].title;
+					var date = 0;
+					var summary = 0;
+					var articleUrl = ""
 
+					passText();
+					function passText(){
+						addPubMedChild("<a href=\"" + articleUrl + "\">" + "<h3>" + title + "</h3>" +"</a>")
+					}
+
+					addPubMedChild(title)
+					function addPubMedChild(text){
+						var newDiv = $("<div>")
+						newDiv.html(text);
+						$("#pubmed-table").append(newDiv);
+					}
+				});
+			}
+		});
+
+
+//NY Times API
+var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+url += '?' + $.param({
+	'api-key': "fda6d04d9d0a44a68eac5eaf44250817",
+	'q': "\"Alzheimer's Research\" Health Disease \"Caregiver\"",
+	'sort': "newest"
+});
 $.ajax({
-	url: natureUrl,
-	method: "GET",
-	dataType: "json"
-}).done(function(response){
+	url: url,
+	method: 'GET',
+}).done(function(result) {
+	passText();
+	function passText(){
+		for (var i = 0; i < 3; i++){
+			addNYTimesChild("<a href=\"" + result.response.docs[i].web_url + "\">" + "<h3>" + result.response.docs[i].headline.main + "</h3>" +"</a>");
+			addNYTimesChild(result.response.docs[i].pub_date.slice(0,10));
+			addNYTimesChild("<p>" + result.response.docs[i].snippet + "</p>");
+		}
+	}
+	function addNYTimesChild(text){
+		var newDiv = $("<div>");
+		newDiv.html(text);
+		$("#nytimes-table").append(newDiv);
+	}
 
-	console.log(response);
-
+	console.log("NYT Check");
+}).fail(function(err) {
+	throw err;
 });
 
+
+
+$(window).resize(function () {
+	var windowWidth = $(window).width();
+
+	if (windowWidth <= 500) {
+		var target = $("h1");
+		target.css({"font-size": "200%","transition": "0.3s"});
+	} else if (windowWidth <= 700) {
+		var target = $("h1");
+		target.css({"font-size": "300%","transition": "0.5s"});
+	} else if (windowWidth <= 900) {
+		var target = $("h1");
+		target.css({"font-size": "400%","transition": "0.5s"});
+	} else if (windowWidth <= 1220) {
+		var target = $("h1");
+		target.css({"font-size": "500%","transition": "0.5s"});
+		// var featuredVideo = $("iframe");
+		// var featuredContent = $(".featuredArtist")
+		// featuredVideo.css({"display":"block"});
+		// featuredContent.css({"display":"block"});
+	} else {
+		var target = $("h1");
+		target.css({"font-size": "700%","transition": "1s"});
+	}
+});
+
+$(window).ready(function () {
+	var windowWidth = $(window).width();
+	if (windowWidth <= 500) {
+		var target = $("h1");
+		target.css({"font-size": "200%"});
+	} else if (windowWidth <= 700) {
+		var target = $("h1");
+		target.css({"font-size": "300%"});
+	} else if (windowWidth <= 900) {
+		var target = $("h1");
+		target.css({"font-size": "400%"});
+	} else if (windowWidth <= 1220) {
+		var target = $("h1");
+		target.css({"font-size": "500%"});
+	} else {
+		var target = $("h1");
+		target.css({"font-size": "700%"});
+	}
+});
 
 
 </script>
