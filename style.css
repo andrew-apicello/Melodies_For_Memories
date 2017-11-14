@@ -1,0 +1,146 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	position: absolute;
+}
+
+.backgroundOne{
+	width: 100vw;
+	height: 100vh;
+	background: url(assets/images/piano-1835179.jpg); 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: visible;
+}
+
+.backgroundTwo{
+	margin-top: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: url(assets/images/violin-2560312.jpg); 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/*.backgroundThree {
+	width: 100vw;
+	height: 100vh;
+	background: url(assets/images/harp-756949.jpg); 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	clear: all;
+	align-content: center;
+}*/
+
+
+h1{
+	margin: auto;
+	padding: 20px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	position: relative;
+	top: 100px;
+	width: 60%;
+	text-align: center;
+	font-size: 700%;
+	border-radius: 20px;
+	font-family: 'Libre Baskerville', serif;
+	overflow: hidden;
+	background: black; 
+	background: -webkit-linear-gradient(left top, rgba(0,0,0,0.0), rgba(0,0,0,1)); 
+	background: -o-linear-gradient(bottom right, rgba(0,0,0,0.0), rgba(0,0,0,1)); 
+	background: -moz-linear-gradient(bottom right, rgba(0,0,0,0.0), rgba(0,0,0,1));
+	background: linear-gradient(to bottom right, rgba(0,0,0,0.0), rgba(0,0,0,1)); 
+	/*Should reduce the size of the h1 tag upon reaching 800px to */
+}
+
+.content{
+	background-color: white;
+	border-top: black solid 2px;
+	border-bottom: black solid 2px;
+	padding: 60px 15%;
+	margin-top: 200px;
+	float: left;
+}
+
+p{
+	font-size: 120%;
+	text-indent: 50px;
+}
+
+img{
+	height: 300px;
+	width: 400px;
+	border: solid black 2px;
+}
+
+.featureContainer{
+	/*margin-top: 300px;*/
+	background-color: white;
+	float: left;
+	padding: 60px 40px 60px 40px;
+	/*border-top: black solid 2px;*/
+	border-bottom: black solid 2px;
+}
+
+.featuredArtist{
+	float: left;
+	width: 40%;
+	background-color: white;
+	padding: 40px;
+}
+iframe{
+	float: left;
+	padding: 0px;
+	margin: 40px
+}
+
+.newImage{
+	float: left;
+}
+
+.newsHeader{
+	clear: both;
+	display: block;
+	padding: 40px;
+	font-size: 300%
+}
+
+#nytimes-table{
+	float: left;
+	width: 60%;
+	margin: 40px;
+}
+#pubmed-table{
+	float: left;
+	width: 60%;
+	margin: 40px;
+}
+
+#nytimes-table div{
+	padding: 2px;
+}
+
+#pubmed-table div{
+	padding: 2px;
+}
+
+#featuredFacebook{
+	margin-top: 300px;
+	border-top: 2px black solid;
+}
+
+footer{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	color: white;
+	font-size: 150%;
+	background-color: black;
+	padding: 20px;
+}
